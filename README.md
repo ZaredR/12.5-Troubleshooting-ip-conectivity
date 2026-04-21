@@ -1,5 +1,7 @@
 # 12.5-Troubleshooting-ip-conectivity
 TEAM:
+
+
 *Zared Isaac Rosas Jiménez
 
 *Brandon Eduardo Ochoa Pérez
