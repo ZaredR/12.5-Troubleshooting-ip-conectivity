@@ -22,4 +22,7 @@ The following table details the specific faults introduced during the activity:
 
 | Device | Injected Error (The Ghost) | Network Symptom | Detection Command |
 | :--- | :--- | :--- | :--- |
-| [Nombre] | [Descripción del error] | [Síntoma] | `[Comando]` |
+| PC-01 | Subnet Mask Mismatch (e.g., /25 instead of /24). | Can ping local hosts, but cannot reach the Default Gateway. | `ipconfig / show ip interface` |
+| Router-A | Inbound ACL blocking ICMP traffic. | Host is alive but does not respond to PING (Request Timed Out). | `show access-lists` |
+| Switch-1 | Access port assigned to the wrong VLAN. | Physical link is up, but no communication with the Gateway. | `show vlan brief` |
+| Host-02 | Default Gateway pointing to a non-existent IP. | Packets cannot be routed outside the local broadcast domain. | `route print / show ip route` |
